@@ -1,0 +1,42 @@
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: var(--spacing);
+}
+.mb-2 {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: var(--spacing);
+}
+.mt-2 {
+  margin-top: calc(var(--spacing) * 2);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-1 {
+  top: var(--spacing);
+}
+.left-1 {
+  left: var(--spacing);
+}
+.right-1 {
+  right: var(--spacing);
+}
+.top-2 {
+  top: calc(var(--spacing) * 2);
+}
+.left-2 {
+  left: calc(var(--spacing) * 2);
+}
+.right-2 {
+  right: calc(var(--spacing) * 2);
+}

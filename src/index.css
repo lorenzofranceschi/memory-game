@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5em;
+  text-align: center;
+  background: #1b1523;
+  color: #ffffff;
+  height: 100vh;
+}
