@@ -15,7 +15,7 @@ function App() {
   const { setDeck, setTurns, setCouplesFound, setFirstCard, setSecondCard } =
     useGameInfo();
 
-  //initialize game
+  //initialize  game
   const initGame = () => {
     setDeck(gameService.duplicateAndShuffleArray(variableService.getCards()));
     setCouplesFound(0);
