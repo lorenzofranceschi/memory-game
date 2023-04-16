@@ -21,8 +21,16 @@ export const LABELS = {
   NUM_TURN: "#Turn",
   NUM_COUPLES: "#Couples found",
   WIN_TEXT: "You win",
+  START: "START",
+  BACK: "BACK",
   PLAY_AGAIN: "Play again",
   NEW_GAME: "New Game",
+  TITLE: "Welcome to MEMORY game",
+  ROLES_TITLE: "ROLES: ",
+  ROLES: "Find all couples of cards",
+  RECORD_TITLE: "RECORD: ",
+  LAST_MATCH_TITLE: "LAST MATCH: ",
+  TURNS: "turns",
 };
 
 export const STATUS_CARD = {

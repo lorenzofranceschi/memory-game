@@ -26,7 +26,10 @@ export default function Header({ onRestartGame }) {
   return (
     <div className="header flex justify-space-between">
       <div className="align-self-center flex  flex-1">
-        <ButtonField title={"BACK"} onClick={() => onRestartGame(false)} />
+        <ButtonField
+          title={variableService.getLabels().BACK}
+          onClick={() => onRestartGame(false)}
+        />
       </div>
       <TextField
         className={"mt-2 flex-1"}
@@ -36,7 +39,6 @@ export default function Header({ onRestartGame }) {
       <div className={"align-self-center flex-1"}>
         <div className="text-align-right">
           <TextField
-            className={""}
             text={
               variableService.getLabels().NUM_COUPLES +
               ": " +

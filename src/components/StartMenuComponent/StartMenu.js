@@ -11,18 +11,18 @@ export default function StartMenu({ onStartGame }) {
     <div className="flex flex-column justify-space-between height-90">
       <div className="flex-1">
         <TextField
-          text={"Welcome to MEMORY game"}
+          text={variableService.getLabels().TITLE}
           tag={variableService.getTextType().TITLE}
         />
         <div>
           <TextField
             className="mb-0"
-            text={"ROLES: "}
+            text={variableService.getLabels().ROLES_TITLE}
             tag={variableService.getTextType().SUBTITLE}
           />
           <TextField
             className="mb-0 mt-0"
-            text={"Find all couples of cards"}
+            text={variableService.getLabels().ROLES}
             tag={variableService.getTextType().SUBTITLE}
           />
         </div>
@@ -30,13 +30,13 @@ export default function StartMenu({ onStartGame }) {
         <div>
           <TextField
             className="mb-0"
-            text={"RECORD: "}
+            text={variableService.getLabels().RECORD_TITLE}
             tag={variableService.getTextType().SUBTITLE}
           />
           <div className="flex justify-space-evenly">
             <TextField
               className="mt-0"
-              text={record + " turns"}
+              text={record + " " + variableService.getLabels().TURNS}
               tag={variableService.getTextType().PARAGRAPH}
             />
           </div>
@@ -44,13 +44,13 @@ export default function StartMenu({ onStartGame }) {
         <div>
           <TextField
             className="mb-0 mt-0"
-            text={"LAST MATCH: "}
+            text={variableService.getLabels().LAST_MATCH_TITLE}
             tag={variableService.getTextType().SUBTITLE}
           />
           <div className="flex justify-space-evenly">
             <TextField
               className="mt-0"
-              text={lastAttempt + " turns"}
+              text={lastAttempt + " " + variableService.getLabels().TURNS}
               tag={variableService.getTextType().PARAGRAPH}
             />
           </div>
@@ -59,7 +59,7 @@ export default function StartMenu({ onStartGame }) {
       <div className="mb-2">
         <ButtonField
           className="half-width height-100"
-          title={"START"}
+          title={variableService.getLabels().START.toUpperCase()}
           onClick={() => {
             onStartGame(true);
           }}
